@@ -1,0 +1,21 @@
+# Exclure tout
+/*
+
+# Inclure les fichiers git et readme
+!.git*
+!/README.md
+
+# Inclure les trucs du serveur
+!/Saves
+/Saves/*
+!/saves/Multiplayer
+/saves/Multiplayer/*
+!/Saves/Multiplayer/bropedz42
+
+!/Server
+/Server/*
+!/Server/bropedz42*
+
+!/db
+/db/*
+!/db/bropedz42.db
