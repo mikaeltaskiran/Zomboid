@@ -706,7 +706,7 @@ SandboxVars = {
     -- 4 = 1 point penalty for every negative trait selected after the first
     NegativeTraitsPenalty = 1,
     -- The number of in-game minutes it takes to read one page of a skill book. Minimum=0,00 Maximum=60,00 Par défaut=2,00
-    MinutesPerPage = 2.0,
+    MinutesPerPage = 0.5,
     -- When enabled, crops and herbs grown inside buildings will die. Does not affect houseplants.
     KillInsideCrops = true,
     -- When enabled, the growth of plants is affected by seasons.
