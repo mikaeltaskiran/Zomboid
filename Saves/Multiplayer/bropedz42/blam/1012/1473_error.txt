@@ -1,0 +1,8 @@
+java.nio.BufferUnderflowException
+	at java.base/java.nio.Buffer.nextGetIndex(Unknown Source)
+	at java.base/java.nio.HeapByteBuffer.get(Unknown Source)
+	at zombie.iso.IsoChunk.LoadFromDiskOrBufferInternal(IsoChunk.java:3584)
+	at zombie.iso.IsoChunk.LoadFromDiskOrBuffer(IsoChunk.java:3546)
+	at zombie.iso.IsoChunk.LoadFromDisk(IsoChunk.java:3540)
+	at zombie.iso.IsoChunk.LoadOrCreate(IsoChunk.java:2319)
+	at zombie.network.ServerChunkLoader$LoaderThread.run(ServerChunkLoader.java:71)
