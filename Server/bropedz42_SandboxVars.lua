@@ -692,9 +692,9 @@ SandboxVars = {
     -- 5 = Very Abundant
     FishAbundance = 3,
     -- When a skill is at this level or above, television/VHS/other media  will not provide XP for it. Minimum=0 Maximum=10 Par défaut=3
-    LevelForMediaXPCutoff = 3,
+    LevelForMediaXPCutoff = 4,
     -- When a skill is at this level or above, scrapping furniture does not provide XP for the relevant skill. Does not apply to Electrical. Minimum=0 Maximum=10 Par défaut=0
-    LevelForDismantleXPCutoff = 0,
+    LevelForDismantleXPCutoff = 3,
     -- Number of days before old blood splats are removed. Removal happens when map chunks are loaded. 0 means they will never disappear. Minimum=0 Maximum=365 Par défaut=0
     BloodSplatLifespanDays = 0,
     -- Number of days before one can benefit from reading previously read literature items. Minimum=1 Maximum=365 Par défaut=90
