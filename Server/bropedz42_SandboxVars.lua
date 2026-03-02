@@ -788,7 +788,7 @@ SandboxVars = {
         -- 4 = Aléatoire
         Speed = 2,
         -- If Random Speed is enabled, this controls what percentage of zombies are Sprinters. Check the "Advanced" box below to use a custom percentage. Minimum=0 Maximum=100 Par défaut=0
-        SprinterPercentage = 0,
+        SprinterPercentage = 2,
         -- Contrôle les dégâts que les zombies infligent à chaque attaque. Par défaut=Normale
         -- 1 = Surhumaine
         -- 2 = Normale
