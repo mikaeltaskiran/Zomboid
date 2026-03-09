@@ -5583,3 +5583,26 @@ table.insert(log, {
 	{ type = "reg_script", name = "Base.Simple_Herb_Drying_Rack", registeryID = 6, version = -4397657523615660946, isLoaded = true }
 	{ type = "reg_script", name = "Base.TanninBarrel", registeryID = 7, version = -2874432892102183004, isLoaded = true }
 };
+log = log or {};
+table.insert(log, {
+	-- -------------------------------------------------------
+	-- Time: 2026/03/09 20:47:15
+	{
+		type = "info",
+		timeStamp = "2026/03/09 20:47:15",
+		saveWorld = "bropedz42",
+		worldVersion = 244,
+		hasErrored = false,
+		itemMods = {
+			"pz-vanilla",
+		},
+	},
+	{ type = "reg_item", fulltype = "Base.MSR7T_Rifle", registeryID = 5305, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.JS14_Clip", registeryID = 5306, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.JS3T_Shotgun", registeryID = 5307, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.JS14_Rifle", registeryID = 5308, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.TrapperCarbine", registeryID = 5309, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.L94_Rifle", registeryID = 5310, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "reg_item", fulltype = "Base.L92_Carbine", registeryID = 5311, existsVanilla = true, isModded = false, modID = "pz-vanilla", obsolete = false, removed = false, isLoaded = true }
+	{ type = "script_version", old_version = -5984687344378145650,name = "Base.Piano", registeryID = 0, version = -4431987416198468729, isLoaded = false }
+};

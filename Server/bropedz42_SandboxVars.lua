@@ -14,7 +14,7 @@ SandboxVars = {
     Distribution = 1,
     -- Controls whether some randomization is applied to zombie distribution.
     ZombieVoronoiNoise = true,
-    -- Définit la fréquence à laquelle les zombies réapparaissent. Par défaut=Normal
+    -- Définit la fréquence à laquelle les zombies réapparaissent. Par défaut=None
     -- 1 = High
     -- 2 = Normal
     -- 3 = Low
@@ -108,15 +108,15 @@ SandboxVars = {
     -- 8 = 6-12 mois
     -- 9 = Disabled
     WaterShut = 2,
-    -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Par défaut=0-30 jours
-    -- 1 = Immédiate
-    -- 2 = 0-30 jours
-    -- 3 = 0-2 mois
-    -- 4 = 0-6 mois
-    -- 5 = 0-1 année
-    -- 6 = 0-5 années
-    -- 7 = 2-6 mois
-    -- 8 = 6-12 mois
+    -- How long after the default start date (July 9, 1993) that the world's electricity turns off for good. Par défaut=14 - 30 Days
+    -- 1 = Instant
+    -- 2 = 14 - 30 Days
+    -- 3 = 14 Days - 2 Months
+    -- 4 = 14 Days - 6 Months
+    -- 5 = 14 Days - 1 Year
+    -- 6 = 14 Days - 5 Years
+    -- 7 = 2 - 6 Months
+    -- 8 = 6 - 12 Months
     -- 9 = Disabled
     ElecShut = 2,
     -- How long alarm batteries can last for after the power shuts off. Par défaut=0-30 jours
@@ -149,7 +149,7 @@ SandboxVars = {
     CannedFoodLootNew = 0.6,
     -- Weapons that are not tools in other categories. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     WeaponLootNew = 0.6,
-    -- Also includes weapon attachments. Minimum=0,00 Maximum=4,00 Par défaut=0,60
+    -- Also includes weapon attachments. Minimum=0,00 Maximum=4,00 Par défaut=2,00
     RangedWeaponLootNew = 0.6,
     -- Loose ammo, boxes and magazines. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     AmmoLootNew = 0.6,
@@ -161,7 +161,7 @@ SandboxVars = {
     ClothingLootNew = 0.6,
     -- Backpacks and other wearable/equippable containers, eg. cases. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     ContainerLootNew = 0.6,
-    -- Keys for buildings/cars, key rings, and locks. Minimum=0,00 Maximum=4,00 Par défaut=0,60
+    -- Keys for buildings/cars, key rings, and locks. Minimum=0,00 Maximum=4,00 Par défaut=0,40
     KeyLootNew = 0.6,
     -- VHS tapes and CDs. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     MediaLootNew = 0.6,
@@ -183,7 +183,7 @@ SandboxVars = {
     RemoveStoryLoot = false,
     -- If enabled, items on the Loot Item Removal List, or that have their rarity set to 'None', will not spawn worn by, or attached to, zombies.
     RemoveZombieLoot = false,
-    -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Minimum=0 Maximum=20 Par défaut=10
+    -- If greater than 0, the spawn of loot is increased relative to the number of nearby zombies,  with the effect multiplied by this number. Minimum=0 Maximum=20 Par défaut=0
     ZombiePopLootEffect = 10,
     -- Minimum=0,00 Maximum=0,20 Par défaut=0,05
     InsaneLootFactor = 0.05,
@@ -218,7 +218,7 @@ SandboxVars = {
     -- 4 = Lente (200 jours)
     -- 5 = Très lente (500 jours)
     ErosionSpeed = 3,
-    -- Nombre de jours avant que la détérioration du monde soit à 100%.  -1 ne signifie pas de détérioration.  Zéro signifie qu'il faut utiliser l'option 'Vitesse de détérioration'.  Maximum 36,500 (100 ans). Minimum=-1 Maximum=36500 Par défaut=0
+    -- Nombre de jours avant que la détérioration du monde soit à 100%%.  -1 ne signifie pas de détérioration.  Zéro signifie qu'il faut utiliser l'option 'Vitesse de détérioration'.  Maximum 36,500 (100 ans). Minimum=-1 Maximum=36500 Par défaut=0
     ErosionDays = 0,
     -- Contrôle la vitesse de croissance des plantations. Par défaut=Normale
     -- 1 = Très rapide
@@ -501,11 +501,11 @@ SandboxVars = {
     FuelStationGasInfinite = false,
     -- The minimum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Minimum=0,00 Maximum=1,00 Par défaut=0,00
     FuelStationGasMin = 0.0,
-    -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Minimum=0,00 Maximum=1,00 Par défaut=0,70
+    -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Minimum=0,00 Maximum=1,00 Par défaut=0,80
     FuelStationGasMax = 0.7,
     -- The chance, as a percentage, that individual gas pumps will initially have no fuel. Minimum=0 Maximum=100 Par défaut=20
     FuelStationGasEmptyChance = 20,
-    -- How likely cars will be locked Par défaut=Rare
+    -- How likely cars will be locked Par défaut=Parfois
     -- 1 = Jamais
     -- 2 = Très rare
     -- 3 = Rare
@@ -515,7 +515,7 @@ SandboxVars = {
     LockedCar = 3,
     -- Détermine à quel point les véhicules sont gourmands en carburant. Minimum=0,00 Maximum=100,00 Par défaut=1,00
     CarGasConsumption = 1.0,
-    -- Détermine la condition générale des véhicules découverts sur la carte. Par défaut=Mauvais état
+    -- Détermine la condition générale des véhicules découverts sur la carte. Par défaut=État correct
     -- 1 = Très mauvais état
     -- 2 = Mauvais état
     -- 3 = État correct
@@ -538,7 +538,7 @@ SandboxVars = {
     DamageToPlayerFromHitByACar = 1,
     -- Active ou non les embouteillages et carambolages qui peuvent apparaître sur les routes principales de la carte.
     TrafficJam = true,
-    -- Détermine à quelle fréquence les véhicules possédant une alarme seront découverts. Par défaut=Très rare
+    -- Détermine à quelle fréquence les véhicules possédant une alarme seront découverts. Par défaut=Rare
     -- 1 = Jamais
     -- 2 = Très rare
     -- 3 = Rare
@@ -586,7 +586,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalMetaStatsModifier = 4,
-    -- How long animals will be pregnant for before giving birth. Par défaut=Very Fast
+    -- How long animals will be pregnant for before giving birth. Par défaut=Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -594,7 +594,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalPregnancyTime = 2,
-    -- Speed at which animals age. Par défaut=Fast
+    -- Speed at which animals age. Par défaut=Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -602,7 +602,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalAgeModifier = 3,
-    -- Par défaut=Fast
+    -- Par défaut=Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -610,7 +610,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalMilkIncModifier = 3,
-    -- Par défaut=Fast
+    -- Par défaut=Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -618,7 +618,7 @@ SandboxVars = {
     -- 5 = Slow
     -- 6 = Very Slow
     AnimalWoolIncModifier = 3,
-    -- The chance of finding animals in farm. Par défaut=Always
+    -- The chance of finding animals in farm. Par défaut=Often
     -- 1 = Never
     -- 2 = Extremely Rare
     -- 3 = Rare
@@ -631,9 +631,9 @@ SandboxVars = {
     AnimalGrassRegrowTime = 240,
     -- If a meta (ie. not actually visible in-game) fox may attack  your chickens if the hutch's door is left open at night.
     AnimalMetaPredator = false,
-    -- If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round. 
+    -- If animals with a mating season will respect it.  Otherwise they can reproduce/lay eggs all year round.
     AnimalMatingSeason = true,
-    -- How long before baby animals will hatch from eggs. Par défaut=Fast
+    -- How long before baby animals will hatch from eggs. Par défaut=Normal
     -- 1 = Ultra Fast
     -- 2 = Very Fast
     -- 3 = Fast
@@ -682,9 +682,9 @@ SandboxVars = {
     -- 2 = In Bodies Only
     -- 3 = Never
     MaggotSpawn = 1,
-    -- The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Minimum=0,00 Maximum=1000,00 Par défaut=1,00
+    -- The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Minimum=0,00 Maximum=1000,00 Par défaut=2,00
     LightBulbLifespan = 1.0,
-    -- The abundance of fish in rivers and lakes. Par défaut=Normal
+    -- The abundance of fish in rivers and lakes. Par défaut=Poor
     -- 1 = Very Poor
     -- 2 = Poor
     -- 3 = Normal
@@ -697,7 +697,7 @@ SandboxVars = {
     LevelForDismantleXPCutoff = 3,
     -- Number of days before old blood splats are removed. Removal happens when map chunks are loaded. 0 means they will never disappear. Minimum=0 Maximum=365 Par défaut=0
     BloodSplatLifespanDays = 0,
-    -- Number of days before one can benefit from reading previously read literature items. Minimum=1 Maximum=365 Par défaut=90
+    -- Number of days before one can benefit from reading previously read literature items. Minimum=1 Maximum=365 Par défaut=45
     LiteratureCooldown = 90,
     -- If there are diminishing returns on bonus trait points provided from selecting multiple negative traits. Par défaut=None
     -- 1 = None
@@ -717,19 +717,19 @@ SandboxVars = {
     FarmingSpeedNew = 1.0,
     -- The abundance of harvested crops. Minimum=0,10 Maximum=10,00 Par défaut=1,00
     FarmingAmountNew = 1.0,
-    -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Minimum=0 Maximum=200 Par défaut=50
+    -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Minimum=0 Maximum=200 Par défaut=25
     MaximumLooted = 50,
     -- How long it takes for Maximum Looted Building Chance to be reached. Minimum=0 Maximum=3650 Par défaut=90
     DaysUntilMaximumLooted = 90,
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Minimum=0,00 Maximum=2,00 Par défaut=0,50
     RuralLooted = 0.5,
-    -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Minimum=0 Maximum=100 Par défaut=0
+    -- The maximum loot that won't spawn when Days Until Maximum Diminished Loot is reached. Check the "Advanced" box below to use an exact percentage. Minimum=0 Maximum=100 Par défaut=20
     MaximumDiminishedLoot = 0,
     -- How long it takes for Maximum Diminished Loot Percentage to be reached. Minimum=0 Maximum=3650 Par défaut=3650
     DaysUntilMaximumDiminishedLoot = 3650,
-    -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Minimum=0,00 Maximum=10,00 Par défaut=1,00
+    -- Functions as a multiplier when applying muscle strain from swinging weapons or carrying heavy loads. Minimum=0,00 Maximum=10,00 Par défaut=0,70
     MuscleStrainFactor = 1.0,
-    -- Functions as a multiplier when applying discomfort from worn items. Minimum=0,00 Maximum=10,00 Par défaut=1,00
+    -- Functions as a multiplier when applying discomfort from worn items. Minimum=0,00 Maximum=10,00 Par défaut=0,80
     DiscomfortFactor = 1.0,
     -- If greater than zero damage can be taken from serious wound infections. Minimum=0,00 Maximum=10,00 Par défaut=0,00
     WoundInfectionFactor = 0.0,
@@ -743,7 +743,7 @@ SandboxVars = {
     FirearmUseDamageChance = true,
     -- A multiplier for the distance at which zombies can hear gunshots. Minimum=0,20 Maximum=2,00 Par défaut=1,00
     FirearmNoiseMultiplier = 1.0,
-    -- Multiplier for firearm jamming chance. 0 disables jamming. Minimum=0,00 Maximum=10,00 Par défaut=0,00
+    -- Multiplier for firearm jamming chance. 0 disables jamming. Minimum=0,00 Maximum=10,00 Par défaut=1,00
     FirearmJamMultiplier = 0.0,
     -- Multiplier for Moodle effects on hit chance. 0 disables Moodle penalty. Minimum=0,00 Maximum=10,00 Par défaut=1,00
     FirearmMoodleMultiplier = 1.0,
@@ -901,7 +901,7 @@ SandboxVars = {
         -- 3 = Inside the room
         -- 4 = Zombies can spawn anywhere
         PlayerSpawnZombieRemoval = 1,
-        -- How many zombies it takes to damage a tall fence. Minimum=-1 Maximum=100 Par défaut=50
+        -- How many zombies it takes to damage a tall fence. Minimum=-1 Maximum=100 Par défaut=25
         FenceThumpersRequired = 50,
         -- How quickly zombies damage tall fences. Minimum=0,01 Maximum=100,00 Par défaut=1,00
         FenceDamageMultiplier = 1.0,
@@ -915,11 +915,11 @@ SandboxVars = {
         PopulationPeakMultiplier = 1.5,
         -- Le jour où la population atteint le pic. Minimum=1 Maximum=365 Par défaut=28
         PopulationPeakDay = 28,
-        -- Le nombre d'heures qui doit s'écouler avant que les zombies puissent réapparaître dans une cellule. Si zéro, la réapparition est annulée. Minimum=0,00 Maximum=8760,00 Par défaut=72,00
+        -- Le nombre d'heures qui doit s'écouler avant que les zombies puissent réapparaître dans une cellule. Si zéro, la réapparition est annulée. Minimum=0,00 Maximum=8760,00 Par défaut=0,00
         RespawnHours = 216.0,
-        -- Le nombre d'heures durant lequel une cellule ne doit pas être visitée avant que les zombies ne puissent y réapparaître. Minimum=0,00 Maximum=8760,00 Par défaut=16,00
+        -- Le nombre d'heures durant lequel une cellule ne doit pas être visitée avant que les zombies ne puissent y réapparaître. Minimum=0,00 Maximum=8760,00 Par défaut=0,00
         RespawnUnseenHours = 48.0,
-        -- La fraction de la population désirée d'une cellule qui devrait réapparaître à chaque période de réapparition. (Cela multiplie le nombre de Z sur une même cellule à chaque réapparition) Minimum=0,00 Maximum=1,00 Par défaut=0,10
+        -- La fraction de la population désirée d'une cellule qui devrait réapparaître à chaque période de réapparition. (Cela multiplie le nombre de Z sur une même cellule à chaque réapparition) Minimum=0,00 Maximum=1,00 Par défaut=0,00
         RespawnMultiplier = 0.05,
         -- Le nombre d'heures qui doit s'écouler avant que des zombies migrent vers des parties vides d'une même cellule. Minimum=0,00 Maximum=8760,00 Par défaut=12,00
         RedistributeHours = 12.0,
@@ -927,7 +927,7 @@ SandboxVars = {
         FollowSoundDistance = 100,
         -- La taille des groupes que les zombies forment lorsqu'ils ne sont pas occupés. Zéro veut dire que les zombies ne formeront pas de groupes. Les groupes ne se forment pas dans les bâtiments ou les forêts. Minimum=0 Maximum=1000 Par défaut=20
         RallyGroupSize = 20,
-        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50% variance with a default group size of 20, groups will vary in size from 10-30. Minimum=0 Maximum=100 Par défaut=50
+        -- The amount, as a percentage, that zombie groups can vary in size from the default (both larger and smaller).   For example, at 50%% variance with a default group size of 20, groups will vary in size from 10-30. Minimum=0 Maximum=100 Par défaut=50
         RallyGroupSizeVariance = 50,
         -- La distance que les zombies parcourent pour former des groupes lorsqu'ils ne sont pas occupés. Minimum=5 Maximum=50 Par défaut=20
         RallyTravelDistance = 20,
