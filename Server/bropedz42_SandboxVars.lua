@@ -150,7 +150,7 @@ SandboxVars = {
     -- Weapons that are not tools in other categories. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     WeaponLootNew = 0.6,
     -- Also includes weapon attachments. Minimum=0,00 Maximum=4,00 Par défaut=2,00
-    RangedWeaponLootNew = 0.6,
+    RangedWeaponLootNew = 2.0,
     -- Loose ammo, boxes and magazines. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     AmmoLootNew = 0.6,
     -- Vehicle parts and the tools needed to install them. Minimum=0,00 Maximum=4,00 Par défaut=0,60
@@ -162,7 +162,7 @@ SandboxVars = {
     -- Backpacks and other wearable/equippable containers, eg. cases. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     ContainerLootNew = 0.6,
     -- Keys for buildings/cars, key rings, and locks. Minimum=0,00 Maximum=4,00 Par défaut=0,40
-    KeyLootNew = 0.6,
+    KeyLootNew = 0.4,
     -- VHS tapes and CDs. Minimum=0,00 Maximum=4,00 Par défaut=0,60
     MediaLootNew = 0.6,
     -- Spiffo items, plushies, and other collectible keepsake items eg. Photos. Minimum=0,00 Maximum=4,00 Par défaut=0,60
@@ -502,7 +502,7 @@ SandboxVars = {
     -- The minimum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Minimum=0,00 Maximum=1,00 Par défaut=0,00
     FuelStationGasMin = 0.0,
     -- The maximum amount of gasoline that can spawn in gas pumps. Check the "Advanced" box below to use a custom amount. Minimum=0,00 Maximum=1,00 Par défaut=0,80
-    FuelStationGasMax = 0.7,
+    FuelStationGasMax = 0.8,
     -- The chance, as a percentage, that individual gas pumps will initially have no fuel. Minimum=0 Maximum=100 Par défaut=20
     FuelStationGasEmptyChance = 20,
     -- How likely cars will be locked Par défaut=Parfois
@@ -683,7 +683,7 @@ SandboxVars = {
     -- 3 = Never
     MaggotSpawn = 1,
     -- The higher the value, the longer lightbulbs last before breaking.  If 0, lightbulbs will never break.  Does not affect vehicle headlights. Minimum=0,00 Maximum=1000,00 Par défaut=2,00
-    LightBulbLifespan = 1.0,
+    LightBulbLifespan = 2.0,
     -- The abundance of fish in rivers and lakes. Par défaut=Poor
     -- 1 = Very Poor
     -- 2 = Poor
@@ -718,7 +718,7 @@ SandboxVars = {
     -- The abundance of harvested crops. Minimum=0,10 Maximum=10,00 Par défaut=1,00
     FarmingAmountNew = 1.0,
     -- The chance that any building will already be looted when found. Check the "Advanced" box below to use a custom number. Minimum=0 Maximum=200 Par défaut=25
-    MaximumLooted = 50,
+    MaximumLooted = 25,
     -- How long it takes for Maximum Looted Building Chance to be reached. Minimum=0 Maximum=3650 Par défaut=90
     DaysUntilMaximumLooted = 90,
     -- The chance that any rural building will already be looted when found. Check the "Advanced" box below to use a custom number. Minimum=0,00 Maximum=2,00 Par défaut=0,50
@@ -920,7 +920,7 @@ SandboxVars = {
         -- Le nombre d'heures durant lequel une cellule ne doit pas être visitée avant que les zombies ne puissent y réapparaître. Minimum=0,00 Maximum=8760,00 Par défaut=0,00
         RespawnUnseenHours = 48.0,
         -- La fraction de la population désirée d'une cellule qui devrait réapparaître à chaque période de réapparition. (Cela multiplie le nombre de Z sur une même cellule à chaque réapparition) Minimum=0,00 Maximum=1,00 Par défaut=0,00
-        RespawnMultiplier = 0.05,
+        RespawnMultiplier = 0.0,
         -- Le nombre d'heures qui doit s'écouler avant que des zombies migrent vers des parties vides d'une même cellule. Minimum=0,00 Maximum=8760,00 Par défaut=12,00
         RedistributeHours = 12.0,
         -- La distance qu'un zombie essayera de parcourir vers le dernier son qu'il a entendu. Minimum=10 Maximum=1000 Par défaut=100
