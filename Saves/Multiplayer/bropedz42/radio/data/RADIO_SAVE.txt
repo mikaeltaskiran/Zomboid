@@ -18,4 +18,4 @@ LvObfuscation = false
 209,1,1,none,-1,none,-1
 210,1,1,none,-1,none,-1
 94200,1,1,none,-1,none,-1
-99400,1,1,none,-1,GEN-974612,4
+99400,1,1,none,-1,GEN-402083,-1
